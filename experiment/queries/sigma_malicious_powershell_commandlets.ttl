@@ -1,0 +1,23 @@
+<http://w3id.org/sepses/resource/sigma/sigma-89819aa4-bbd6-46bc-88ec-c7f7fe30efa6>
+        a                              <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> ;
+        <http://purl.org/dc/terms/created>
+                "2017/03/05" ;
+	<http://purl.org/dc/terms/modified>
+                "2019/01/22" ;
+	<http://purl.org/dc/terms/creator>
+                "Sean Metcalf (source)","Florian Roth (rule)" ;	
+        <http://purl.org/dc/terms/description>
+                "Detects Commandlet names from well-known PowerShell exploitation frameworks" ;
+        <http://purl.org/dc/terms/id>  "sigma-89819aa4-bbd6-46bc-88ec-c7f7fe30efa6" ;
+        <http://purl.org/dc/terms/title>
+                "Malicious PowerShell Commandlets" ;
+	<http://w3id.org/sepses/vocab/rule/sigma#logSourceDefinition>
+                "It is recommended to use the new 'Script Block Logging' of PowerShell v5 https://adsecurity.org/?p=2277" ;
+        <http://w3id.org/sepses/vocab/rule/sigma#tags>
+                <http://w3id.org/sepses/resource/cat/technique/T1086> , <http://w3id.org/sepses/resource/cat/technique/T1086.001>;
+        <http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct>
+                "Windows" ;
+        <http://w3id.org/sepses/vocab/rule/sigma#logSourceService>
+                "PowerShell" ;
+        <http://w3id.org/sepses/vocab/rule/sigma#sparqlQuery>
+                "SELECT ?s WHERE { ?s ?p ?o. FILTER (regex(str(?o),'Get-Keystrokes') || regex(str(?o),'Get-Clipboard') || regex(str(?o),'Invoke-Mimikatz'))   }" .

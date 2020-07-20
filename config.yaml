@@ -1,0 +1,11 @@
+rdf-dir: experiment/loggraph
+
+query-dir: experiment/queries
+
+rule-dir: experiment/rules
+
+output-dir: experiment/output
+
+output-rdf: sepsesEvent.ttl
+
+input-log-graph: apt29day2sysmon.json-output.ttl

@@ -1,0 +1,10 @@
+<http://w3id.org/sepses/resource/event/core/event-9157fa23-700f-4fa2-8c0c-8f8d5417bfc1>
+        a       <http://w3id.org/sepses/vocab/event/core#SepsesEvent> ;
+        <http://purl.org/dc/terms/created>
+                "2020-07-19 17:52:21.041" ;
+        <http://purl.org/dc/terms/description>
+                "Malicious PowerShell Commandlets" ;
+        <http://w3id.org/sepses/vocab/event/core#detectedLog>
+                <http://w3id.org/sepses/resource/win-event/audit/LogEntry-61798ba8-937b-402a-b0a9-64c33f59af1d> , <http://w3id.org/sepses/resource/win-event/audit/LogEntry-b231e2a6-59bb-487a-b7f8-b293c14e3bf5> , <http://w3id.org/sepses/resource/win-event/audit/LogEntry-e3d2c1f5-4452-427c-9d9c-438cae4c0dad> , <http://w3id.org/sepses/resource/win-event/audit/LogEntry-9168c71c-9f53-4087-a129-0ecb7ff86d5a> ;
+        <http://w3id.org/sepses/vocab/event/core#hasRule>
+                "http://w3id.org/sepses/resource/sigma/sigma-89819aa4-bbd6-46bc-88ec-c7f7fe30efa6" .

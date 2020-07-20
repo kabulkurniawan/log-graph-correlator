@@ -1,0 +1,23 @@
+<http://w3id.org/sepses/resource/sigma/sigma-6dc5d284-69ea-42cf-9311-fb1c3932a69a>
+        a                              <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> ;
+        <http://purl.org/dc/terms/created>
+                "2019/10/21" ;
+	<http://purl.org/dc/terms/modified>
+                "2019/11/04" ;
+	<http://purl.org/dc/terms/creator>
+                "Timur Zinniatullin, oscd.community" ;	
+        <http://purl.org/dc/terms/description>
+                "An adversary may compress data (e.g., sensitive documents) that is collected prior to exfiltration in order to make it portable and minimize the amount of data sent over the network" ;
+        <http://purl.org/dc/terms/id>  "sigma-6dc5d284-69ea-42cf-9311-fb1c3932a69a" ;
+        <http://purl.org/dc/terms/title>
+                "Data Compressed - Powershell" ;
+	<http://w3id.org/sepses/vocab/rule/sigma#logSourceDefinition>
+                "Script block logging must be enabled" ;
+        <http://w3id.org/sepses/vocab/rule/sigma#tags>
+                <http://w3id.org/sepses/resource/cat/technique/T1002> , <http://w3id.org/sepses/resource/cat/technique/T1560>;
+        <http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct>
+                "Windows" ;
+        <http://w3id.org/sepses/vocab/rule/sigma#logSourceService>
+                "PowerShell" ;
+        <http://w3id.org/sepses/vocab/rule/sigma#sparqlQuery>
+                "SELECT ?s WHERE { ?s ?p ?o. FILTER (regex(str(?o),'-Recurse') || regex(str(?o),'Compress-Archive'))   }" .
